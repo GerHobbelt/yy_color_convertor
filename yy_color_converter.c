@@ -310,8 +310,8 @@ void CIEXYZ2HunterLab(CGFloat X, CGFloat Y, CGFloat Z,
 
 void HunterLab2CIEXYZ(CGFloat L, CGFloat a, CGFloat b,
                       CGFloat *X, CGFloat *Y, CGFloat *Z) {
-    CGFloat x = L / 10;
-    CGFloat y = a / 17.5 * L / 10;
+    CGFloat y = L / 10;
+    CGFloat x = a / 17.5 * L / 10;
     CGFloat z = b / 7 * L / 10;
     *Y = y * y;
     *X = (x + *Y) / 1.02;
