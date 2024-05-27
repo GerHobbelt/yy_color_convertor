@@ -7,6 +7,8 @@
 #ifndef yy_color_h
 #define yy_color_h
 
+#define _USE_MATH_DEFINES    // to make sure MSVC will load the M_PI define, among others
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
